@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/main_adapter_item_simpledrawee"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/main_adapter_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="this is title"
+        app:layout_constraintTop_toBottomOf="@+id/main_adapter_item_simpledrawee"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/main_adapter_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/main_adapter_item_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="this is price"
+        android:textColor="@color/colorRed"
+        android:textSize="16sp"
+        />
+</android.support.constraint.ConstraintLayout>
